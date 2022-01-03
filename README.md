@@ -2,7 +2,7 @@
 Romi project using Entech classes and robot organization.  This code is NOT complete.  It is meant as a training exercise for new programmers.
 
 Exercises
-=========
+---------
  1. Hook up the drive subsystem to the joystick input
  2. Add output to SmartDashboard for drive subsystem status (e.g. gyro angle, speed, accelerations, ...)
  3. Provide a command that when a button on the joystick is pressed, moves the robot forward by 6 inches
