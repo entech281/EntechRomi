@@ -7,7 +7,7 @@ package frc.robot.commands;
 import frc.robot.subsystems.DriveSubsystem;
 import edu.wpi.first.wpilibj.Joystick;
 
-public class ArcadeDriveCommand extends EntechCommandBase {
+public class ArcadeDriveCommand extends EntechCommand {
     private final DriveSubsystem m_drivetrain;
     private final Joystick m_stick;
 

@@ -6,7 +6,7 @@ package frc.robot.commands;
 
 import frc.robot.subsystems.DriveSubsystem;
 
-public class TurnDegrees extends EntechCommandBase {
+public class TurnDegrees extends EntechCommand {
   private final DriveSubsystem m_drive;
   private final double m_degrees;
   private final double m_speed;

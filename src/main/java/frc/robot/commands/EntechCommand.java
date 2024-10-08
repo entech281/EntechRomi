@@ -5,28 +5,28 @@
  */
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.logger.DataLogger;
 import frc.robot.logger.DataLoggerFactory;
 import frc.robot.subsystems.EntechSubsystem;
 
-public class EntechCommandBase extends CommandBase {
+public class EntechCommand extends Command {
 
     public static final double DEFAULT_TIMEOUT_SECONDS = 60.0;
     protected DataLogger logger;
 
-    public EntechCommandBase(EntechSubsystem sub) {
+    public EntechCommand(EntechSubsystem sub) {
         this(sub, DEFAULT_TIMEOUT_SECONDS);
         logger = DataLoggerFactory.getLoggerFactory().createDataLogger(this.getName());
     }
 
-    public EntechCommandBase(EntechSubsystem sub1, EntechSubsystem sub2) {
+    public EntechCommand(EntechSubsystem sub1, EntechSubsystem sub2) {
         addRequirements(sub1, sub2);
         logger = DataLoggerFactory.getLoggerFactory().createDataLogger(this.getName());
     }
     
     
-    public EntechCommandBase(EntechSubsystem subsystem, double timeout) {
+    public EntechCommand(EntechSubsystem subsystem, double timeout) {
         addRequirements(subsystem);
     }
 }

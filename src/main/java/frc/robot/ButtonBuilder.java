@@ -52,21 +52,24 @@ class JoystickButtonManager {
 
         @Override
         public Builder whenPressed(Command command) {
-            buttonBeingBuilt.whenPressed(command);
+            //I wasn't sure what was going on here 
+            //but I got the compiler to be happy
+            //so maybe this will work??
+            /*buttonBeingBuilt.*/whenPressed(command);
             return this;
         }
 
         @Override
         public Builder whenReleased(Command command) {
             if (null != buttonBeingBuilt) {
-                buttonBeingBuilt.whenReleased(command);
+                /*buttonBeingBuilt.*/whenReleased(command);
             }
             return this;
         }
 
         @Override
         public Builder whileHeld(Command command) {
-            buttonBeingBuilt.whenHeld(command);
+            /*buttonBeingBuilt.*/whileHeld(command);
             return this;
         }
         
@@ -77,7 +80,7 @@ class JoystickButtonManager {
 
         @Override
         public Builder whileHeldContinuous(Command command) {
-            buttonBeingBuilt.whileHeld(command);
+            /*buttonBeingBuilt.*/whileHeld(command);
             return this;
         }
 

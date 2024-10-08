@@ -6,7 +6,7 @@ package frc.robot.commands;
 
 import frc.robot.subsystems.DriveSubsystem;
 
-public class DriveDistance extends EntechCommandBase {
+public class DriveDistance extends EntechCommand {
   private final DriveSubsystem m_drive;
   private final double m_distance;
   private final double m_speed;

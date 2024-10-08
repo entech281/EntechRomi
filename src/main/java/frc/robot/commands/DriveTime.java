@@ -7,7 +7,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.Timer;
 import frc.robot.subsystems.DriveSubsystem;
 
-public class DriveTime extends EntechCommandBase {
+public class DriveTime extends EntechCommand {
   private final double m_duration;
   private final double m_speed;
   private final DriveSubsystem m_drive;

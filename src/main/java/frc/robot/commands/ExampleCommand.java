@@ -6,7 +6,7 @@ package frc.robot.commands;
 
 import frc.robot.subsystems.EntechSubsystem;
 
-public class ExampleCommand extends EntechCommandBase {
+public class ExampleCommand extends EntechCommand {
     private final EntechSubsystem m_subsys;
 
   /**

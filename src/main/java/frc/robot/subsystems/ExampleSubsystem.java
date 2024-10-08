@@ -14,7 +14,7 @@ public class ExampleSubsystem extends EntechSubsystem {
 
     // Private objects are defined here
     private int counter;
-    private bool counter_active;
+    private boolean counter_active;
 
     // Create the subsystem
     public ExampleSubsystem() {
@@ -30,10 +30,10 @@ public class ExampleSubsystem extends EntechSubsystem {
     @Override
     public void periodic() {
         incrementCounter();
-        if (DriverStation.getInstance().isDisabled()) {
+        if (DriverStation.isDisabled()) {
             resetCounter();
         }
-        logger.log("Example Counter",getCounter())
+        logger.log("Example Counter",getCounter());
     }
 
     // These are the public methods that describe how the subsystem acts to the rest of the robot
