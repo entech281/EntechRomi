@@ -59,6 +59,8 @@ public class DriveSubsystem extends EntechSubsystem {
   public void periodic() {
     // Exercise 1: Send some current drive status (e.g. gyro angle, motor speeds, encoder values, accelerations) to the SmartDashBoard
     // This method will be called once per scheduler run
+    logger.log("distance: ", getAverageDistanceInch());
+    System.out.println(" distance: " + getAverageDistanceInch());
   }
 
   public void arcadeDrive(Joystick js) {
